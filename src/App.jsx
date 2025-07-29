@@ -5,7 +5,7 @@ import Layout from './Layout'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
-import Portfolio from './portfolio'
+import Portfolio from './Portfolio'
 import NotFound from './NotFound'
 
 const routers = createBrowserRouter([
