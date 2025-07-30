@@ -7,7 +7,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gray-700 px-6 py-8 flex items-center justify-between relative">
+    <nav className="bg-gray-700 px-6 py-8 flex items-center justify-between relative z-50">
       <Link to="/" className="text-white text-2xl sm:text-3xl font-bold uppercase">
         start framework
       </Link>
@@ -20,7 +20,11 @@ export default function Navbar() {
       </div>
 
       {/* Nav Links */}
-      <ul className={`sm:flex gap-5 text-white font-bold absolute sm:static top-full left-0 w-full sm:w-auto bg-gray-700 sm:bg-transparent transition-all duration-300 ${isOpen ? 'flex flex-col items-center py-4' : 'hidden sm:flex'}`}>
+      <ul
+        className={`sm:flex gap-5 text-white font-bold absolute sm:static top-full left-0 w-full sm:w-auto bg-gray-700 sm:bg-transparent transition-all duration-300 ${
+          isOpen ? 'flex flex-col items-center py-4 z-50' : 'hidden sm:flex'
+        }`}
+      >
         <li className="text-xl">
           <NavLink
             to="/about"
