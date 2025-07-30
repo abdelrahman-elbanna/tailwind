@@ -24,9 +24,9 @@ export default function Contact() {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center justify-center">
-        <div className="title">
-          <h1 className='text-center text-slate-700 text-4xl font-bold uppercase'>contact section</h1>
+      <div className="w-full min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="title text-center">
+          <h1 className='text-slate-700 text-4xl font-bold uppercase'>contact section</h1>
           <div className='flex justify-center items-center mt-2'>
             <div className='bg-slate-700 h-1 mx-auto mt-2 w-2/6'></div>
             <span className="star-1 text-slate-700 font-bold text-3xl">★</span>
@@ -34,7 +34,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className='flex flex-col gap-5 w-1/2 mt-10'>
+        <form className='flex flex-col gap-5 w-full sm:w-3/4 md:w-1/2 mt-10'>
           <div>
             <input
               type="text"
